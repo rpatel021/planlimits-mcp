@@ -13,6 +13,9 @@ Tools:
 - `get_recent_changes(since?)`
 - `recommend_plan(budget_usd, use?)`
 - `route_task(plans: [{plan, state}], task?)`: which of your plans to use now, a fallback, reset windows, rationale and a weekly rotation.
+- `can_afford_task(plans: [{plan, state}], size?, current?, task?)`: whether to start a task now. Returns go, wait or switch, which plan to use, reasons and reset windows. Task size (small, medium or large) is a rough estimate, since vendors don't publish per-task usage.
+- `pick_plan(interface?, budget_usd?, usage?, who?)`: the cheapest plan that fits your answers, with reasons, up to 3 alternatives and source links.
+- `get_service_status(provider?)`: live status and open incidents from official vendor status pages. Shows outages only, not throttling or per-account limits. Omit provider for all.
 
 Every response includes source links and checked dates.
 

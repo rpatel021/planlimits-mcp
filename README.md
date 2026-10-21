@@ -8,7 +8,7 @@ MCP docs: https://planlimits.app/mcp-docs/
 
 - **CLI** (`planlimits`): reads your local Claude Code and Codex CLI logs, shows usage, state and reset times per plan, and tells you which plan to use next.
 - **Local MCP server** (`planlimits mcp`): exposes `get_my_usage` and `route_me` to your agent over stdio.
-- **Remote MCP server** (`https://planlimits.app/mcp`): read-only plan data, no auth: `list_plans`, `get_tool_plans`, `get_recent_changes`, `recommend_plan`, `route_task`.
+- **Remote MCP server** (`https://planlimits.app/mcp`): read-only plan data, no auth: `list_plans`, `get_tool_plans`, `get_recent_changes`, `recommend_plan`, `route_task`, `can_afford_task`, `pick_plan`, `get_service_status`.
 
 ## Install and run the CLI
 
