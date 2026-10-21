@@ -1,0 +1,418 @@
+{
+ "checked": "2026-10-19",
+ "tools": [
+  {
+   "id": "claude-code",
+   "name": "Claude Code",
+   "vendor": "Anthropic",
+   "sources": [
+    "https://claude.com/pricing",
+    "https://support.claude.com/en/articles/11049741-what-is-the-max-plan"
+   ],
+   "limitModel": "Rolling 5-hour session window plus weekly limits on paid plans; one pool shared across Claude apps and Claude Code. No fixed message count published.",
+   "plans": [
+    {
+     "name": "Free",
+     "price": 0,
+     "priceNote": "$0",
+     "limits": "No Claude Code access",
+     "window": "5-hour session",
+     "models": "Sonnet, Haiku",
+     "codingAccess": false,
+     "source": "https://claude.com/pricing",
+     "checked": "2026-10-19"
+    },
+    {
+     "name": "Pro",
+     "price": 20,
+     "priceNote": "$20/mo monthly; $17/mo billed annually ($200 up front)",
+     "limits": "At least 5x Free usage per 5-hour session; weekly limits apply; exact count not disclosed",
+     "window": "5-hour + weekly",
+     "models": "Opus, Sonnet, Haiku; Fable via usage credits",
+     "codingAccess": true,
+     "source": "https://claude.com/pricing",
+     "checked": "2026-10-19"
+    },
+    {
+     "name": "Max 5x",
+     "price": 100,
+     "priceNote": "$100/mo",
+     "limits": "5x Pro per-session usage; weekly limit across all models; exact count not disclosed. Fable capped at 50% of weekly limits. $100/mo API credits",
+     "window": "5-hour + weekly",
+     "models": "Fable, Opus, Sonnet, Haiku",
+     "codingAccess": true,
+     "source": "https://support.claude.com/en/articles/11049741-what-is-the-max-plan",
+     "checked": "2026-10-19"
+    },
+    {
+     "name": "Max 20x",
+     "price": 200,
+     "priceNote": "$200/mo",
+     "limits": "20x Pro per-session usage; weekly limit across all models; exact count not disclosed. Fable capped at 50% of weekly limits. $200/mo API credits",
+     "window": "5-hour + weekly",
+     "models": "Fable, Opus, Sonnet, Haiku",
+     "codingAccess": true,
+     "source": "https://support.claude.com/en/articles/11049741-what-is-the-max-plan",
+     "checked": "2026-10-19"
+    }
+   ]
+  },
+  {
+   "id": "openai-codex",
+   "name": "OpenAI Codex",
+   "vendor": "OpenAI",
+   "sources": [
+    "https://learn.chatgpt.com/docs/pricing"
+   ],
+   "limitModel": "Local messages per 5-hour period (published as ranges per model for Plus/Business) plus weekly limits; Pro plans currently have no 5-hour limit. Extra usage via ChatGPT credits.",
+   "plans": [
+    {
+     "name": "Free",
+     "price": 0,
+     "priceNote": "$0",
+     "limits": "not disclosed",
+     "window": "not disclosed",
+     "models": "GPT-6 Luna (Standard speed, desktop app, subject to rollout)",
+     "codingAccess": true,
+     "source": "https://learn.chatgpt.com/docs/pricing",
+     "checked": "2026-10-19"
+    },
+    {
+     "name": "Go",
+     "price": 8,
+     "priceNote": "$8/mo",
+     "limits": "not disclosed",
+     "window": "not disclosed",
+     "models": "GPT-6 Luna (Standard speed, desktop app, subject to rollout)",
+     "codingAccess": true,
+     "source": "https://learn.chatgpt.com/docs/pricing",
+     "checked": "2026-10-19"
+    },
+    {
+     "name": "Plus",
+     "price": 20,
+     "priceNote": "$20/mo",
+     "limits": "Estimated local messages per 5h: GPT-6.1 Sol 15-160; GPT-6 Sol 15-150; GPT-6 Astra 5-45; GPT-6 Luna 350-3,000. Weekly limits may also apply",
+     "window": "5-hour + weekly",
+     "models": "GPT-6.1 Sol, GPT-6 Luna (plus GPT-6 Sol/Astra per limits table)",
+     "codingAccess": true,
+     "source": "https://learn.chatgpt.com/docs/pricing",
+     "checked": "2026-10-19"
+    },
+    {
+     "name": "Pro",
+     "price": 100,
+     "priceNote": "$100, $200 or $500/mo tiers",
+     "limits": "No 5-hour limit currently; weekly limit amounts not disclosed on pricing page. Ultrafast mode on Pro $500",
+     "window": "Weekly (5-hour currently off)",
+     "models": "GPT-6.1 Sol, GPT-6 Sol, GPT-6 Luna, GPT-6 Astra",
+     "codingAccess": true,
+     "source": "https://learn.chatgpt.com/docs/pricing",
+     "checked": "2026-10-19"
+    },
+    {
+     "name": "Business",
+     "price": 25,
+     "priceNote": "$25/user/mo monthly (lower when billed annually, 2+ users)",
+     "limits": "Standard Business: same per-model 5h ranges as Plus",
+     "window": "5-hour + weekly",
+     "models": "GPT-6.1 Sol, GPT-6 Sol, GPT-6 Luna, GPT-6 Astra",
+     "codingAccess": true,
+     "source": "https://learn.chatgpt.com/docs/pricing",
+     "checked": "2026-10-19"
+    }
+   ]
+  },
+  {
+   "id": "cursor",
+   "name": "Cursor",
+   "checked": "2026-10-20",
+   "vendor": "Cursor (sold as part of The X Subscription; X Subscription Corp is the only authorized seller)",
+   "sources": [
+    "https://cursor.com/pricing",
+    "https://cursor.com/docs/account/pricing"
+   ],
+   "limitModel": "Paid plans include one weekly-refreshing pool for Cursor models (Grok 4.7/4.6/4.5, Composer 2.5), shared across Cursor and Grok apps; tiers stated as multiples of Plus. Third-party models (Claude, GPT, Gemini) are not in the pool: on Premium and above they are billed at API list price from prepaid credit; Plus and Free don't include them. Legacy Cursor plans (Hobby, Start, Pro, Pro+, Ultra, Teams Standard/Premium) continue for existing customers with two monthly pools.",
+   "plans": [
+    {
+     "name": "Free",
+     "price": 0,
+     "priceNote": "$0",
+     "limits": "Limited agent and chat requests (not disclosed)",
+     "window": "Weekly refresh",
+     "models": "Agent and Chat with limited usage; no third-party models",
+     "codingAccess": true,
+     "source": "https://cursor.com/docs/account/pricing",
+     "checked": "2026-10-20"
+    },
+    {
+     "name": "Plus",
+     "price": 8,
+     "priceNote": "$8/mo or $80/yr",
+     "limits": "Basic usage pool; exact size not disclosed",
+     "window": "Weekly refresh",
+     "models": "Cursor models: Grok 4.7, 4.6, 4.5, Composer 2.5 at fixed settings; no Auto, Cloud Agents, Bugbot or third-party models",
+     "codingAccess": true,
+     "source": "https://cursor.com/docs/account/pricing",
+     "checked": "2026-10-20"
+    },
+    {
+     "name": "Premium",
+     "price": 30,
+     "priceNote": "$30/mo or $300/yr",
+     "limits": "4x Plus usage; absolute size not disclosed",
+     "window": "Weekly refresh",
+     "models": "Cursor models: Grok 4.7, 4.6, 4.5, Composer 2.5; third-party at API list price from prepaid credit",
+     "codingAccess": true,
+     "source": "https://cursor.com/docs/account/pricing",
+     "checked": "2026-10-20"
+    },
+    {
+     "name": "Super",
+     "price": 100,
+     "priceNote": "$100/mo or $1,000/yr",
+     "limits": "15x Plus usage; absolute size not disclosed",
+     "window": "Weekly refresh",
+     "models": "Cursor models: Grok 4.7, 4.6, 4.5, Composer 2.5; third-party at API list price",
+     "codingAccess": true,
+     "source": "https://cursor.com/docs/account/pricing",
+     "checked": "2026-10-20"
+    },
+    {
+     "name": "Ultra",
+     "price": 200,
+     "priceNote": "$200/mo or $2,000/yr",
+     "limits": "50x Plus usage; absolute size not disclosed",
+     "window": "Weekly refresh",
+     "models": "Cursor models: Grok 4.7, 4.6, 4.5, Composer 2.5; third-party at API list price",
+     "codingAccess": true,
+     "source": "https://cursor.com/docs/account/pricing",
+     "checked": "2026-10-20"
+    },
+    {
+     "name": "Teams",
+     "price": 30,
+     "priceNote": "$30, $100 or $200/seat/mo",
+     "limits": "Matches seat tier (4x/15x/50x Plus)",
+     "window": "Weekly refresh",
+     "models": "Cursor models: Grok 4.7, 4.6, 4.5, Composer 2.5; third-party at API list price plus Cursor Token Rate",
+     "codingAccess": true,
+     "source": "https://cursor.com/docs/account/pricing",
+     "checked": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "github-copilot",
+   "name": "GitHub Copilot",
+   "vendor": "GitHub",
+   "sources": [
+    "https://docs.github.com/en/copilot/concepts/billing/individual-plans",
+    "https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing"
+   ],
+   "limitModel": "Monthly GitHub AI Credits (1 credit = $0.01), token-based. Resets 00:00 UTC on the 1st of each month. Code completions and next edit suggestions unlimited on paid plans.",
+   "plans": [
+    {
+     "name": "Free",
+     "price": 0,
+     "priceNote": "$0",
+     "limits": "2,000 code completions/mo; AI Credits allowance amount not disclosed",
+     "window": "Monthly",
+     "models": "Auto model selection only",
+     "codingAccess": true,
+     "source": "https://docs.github.com/en/copilot/concepts/billing/individual-plans",
+     "checked": "2026-10-19"
+    },
+    {
+     "name": "Pro",
+     "price": 10,
+     "priceNote": "$10/mo",
+     "limits": "1,500 AI Credits/mo (1,000 base + 500 flex)",
+     "window": "Monthly",
+     "models": "A selection of models",
+     "codingAccess": true,
+     "source": "https://docs.github.com/en/copilot/concepts/billing/individual-plans",
+     "checked": "2026-10-19"
+    },
+    {
+     "name": "Pro+",
+     "price": 39,
+     "priceNote": "$39/mo",
+     "limits": "7,000 AI Credits/mo (3,900 base + 3,100 flex)",
+     "window": "Monthly",
+     "models": "Premium models (Claude, GPT, Gemini, Grok and others)",
+     "codingAccess": true,
+     "source": "https://docs.github.com/en/copilot/concepts/billing/individual-plans",
+     "checked": "2026-10-19"
+    },
+    {
+     "name": "Max",
+     "price": 100,
+     "priceNote": "$100/mo",
+     "limits": "20,000 AI Credits/mo (10,000 base + 10,000 flex); 30% off model costs with auto model selection through Oct 28, 2026 (paid plans normally 10%)",
+     "window": "Monthly",
+     "models": "Priority access to premium models",
+     "codingAccess": true,
+     "source": "https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing",
+     "checked": "2026-10-21"
+    },
+    {
+     "name": "Business",
+     "price": 19,
+     "priceNote": "$19/seat/mo",
+     "limits": "1,900 AI Credits/user/mo, pooled; overage $0.01/credit",
+     "window": "Monthly",
+     "models": "Premium models",
+     "codingAccess": true,
+     "source": "https://docs.github.com/en/copilot/concepts/billing/individual-plans",
+     "checked": "2026-10-19"
+    },
+    {
+     "name": "Enterprise",
+     "price": 39,
+     "priceNote": "$39/seat/mo",
+     "limits": "3,900 AI Credits/user/mo, pooled; overage $0.01/credit",
+     "window": "Monthly",
+     "models": "Priority access to premium models",
+     "codingAccess": true,
+     "source": "https://docs.github.com/en/copilot/concepts/billing/individual-plans",
+     "checked": "2026-10-19"
+    }
+   ]
+  },
+  {
+   "id": "gemini-cli",
+   "name": "Gemini CLI / Code Assist",
+   "vendor": "Google",
+   "sources": [
+    "https://cloud.google.com/products/gemini/code-assist",
+    "https://docs.cloud.google.com/gemini/docs/quotas",
+    "https://developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals"
+   ],
+   "limitModel": "Consumer access (Google AI Pro/Ultra, free individual) ended 2026-06-18 (moved to Antigravity). Remaining Code Assist Standard/Enterprise plans have per-user daily request quotas.",
+   "plans": [
+    {
+     "name": "Code Assist Standard",
+     "price": 22.8,
+     "priceNote": "$22.80/user/mo monthly; $19/user/mo with a 12-month commitment",
+     "limits": "Gemini CLI + agent mode: 1,500 requests/user/day; 6,000 code requests/day; 960 chat requests/day; 2 req/sec",
+     "window": "Daily",
+     "models": "Gemini 3 (Preview channel)",
+     "codingAccess": true,
+     "source": "https://cloud.google.com/products/gemini/pricing",
+     "checked": "2026-10-21"
+    },
+    {
+     "name": "Code Assist Enterprise",
+     "price": 54,
+     "priceNote": "$54/user/mo monthly; $45/user/mo with a 12-month commitment",
+     "limits": "Gemini CLI + agent mode: 2,000 requests/user/day; 6,000 code requests/day; 960 chat requests/day",
+     "window": "Daily",
+     "models": "Gemini 3 (Preview channel)",
+     "codingAccess": true,
+     "source": "https://cloud.google.com/products/gemini/pricing",
+     "checked": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "id": "antigravity",
+   "name": "Google Antigravity (CLI)",
+   "vendor": "Google",
+   "sources": [
+    "https://antigravity.google/pricing"
+   ],
+   "limitModel": "Weekly rate limits plus a flexible AI credit pool on paid tiers. Numeric limits not disclosed.",
+   "plans": [
+    {
+     "name": "Individual (free)",
+     "price": 0,
+     "priceNote": "$0",
+     "limits": "Basic weekly rate limits (not disclosed); unlimited Tab completions and Command requests",
+     "window": "Weekly",
+     "models": "A variety of agent models",
+     "codingAccess": true,
+     "source": "https://antigravity.google/pricing",
+     "checked": "2026-10-19"
+    },
+    {
+     "name": "Google AI Pro",
+     "price": null,
+     "priceNote": "not disclosed on Antigravity pricing page",
+     "limits": "More rate limits + flexible AI credit pool (not disclosed)",
+     "window": "Weekly",
+     "models": "Gemini models incl. Gemini 4 Argon",
+     "codingAccess": true,
+     "source": "https://antigravity.google/pricing",
+     "checked": "2026-10-19"
+    },
+    {
+     "name": "Google AI Ultra",
+     "price": null,
+     "priceNote": "not disclosed on Antigravity pricing page",
+     "limits": "Even more rate limits + flexible AI credit pool (not disclosed)",
+     "window": "Weekly",
+     "models": "Higher access to latest Gemini models",
+     "codingAccess": true,
+     "source": "https://antigravity.google/pricing",
+     "checked": "2026-10-19"
+    }
+   ]
+  },
+  {
+   "id": "windsurf",
+   "name": "Windsurf / Devin",
+   "vendor": "Cognition",
+   "sources": [
+    "https://devin.ai/pricing"
+   ],
+   "limitModel": "windsurf.com/pricing now redirects to devin.ai/pricing. Usage allowance refreshes daily and weekly; numeric quotas not disclosed.",
+   "plans": [
+    {
+     "name": "Free",
+     "price": 0,
+     "priceNote": "$0",
+     "limits": "Light agent quota (not disclosed); unlimited inline edits and Tab",
+     "window": "Daily + weekly",
+     "models": "Limited model availability",
+     "codingAccess": true,
+     "source": "https://devin.ai/pricing",
+     "checked": "2026-10-19"
+    },
+    {
+     "name": "Pro",
+     "price": 20,
+     "priceNote": "$20/mo",
+     "limits": "Increased quotas (not disclosed); extra usage at API pricing",
+     "window": "Daily + weekly",
+     "models": "Frontier models from OpenAI, Claude, Gemini, SpaceXAI + open source; free SWE-2",
+     "codingAccess": true,
+     "source": "https://devin.ai/pricing",
+     "checked": "2026-10-19"
+    },
+    {
+     "name": "Max",
+     "price": 200,
+     "priceNote": "$200/mo",
+     "limits": "Significantly higher quotas (not disclosed)",
+     "window": "Daily + weekly",
+     "models": "Full model availability",
+     "codingAccess": true,
+     "source": "https://devin.ai/pricing",
+     "checked": "2026-10-19"
+    },
+    {
+     "name": "Teams",
+     "price": 80,
+     "priceNote": "$80/mo team + $40/mo per full dev seat",
+     "limits": "Per-user quota (not disclosed)",
+     "window": "Daily + weekly",
+     "models": "Full model availability",
+     "codingAccess": true,
+     "source": "https://devin.ai/pricing",
+     "checked": "2026-10-19"
+    }
+   ]
+  }
+ ]
+}

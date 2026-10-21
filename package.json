@@ -1,0 +1,11 @@
+{
+ "name": "planlimits",
+ "version": "0.2.0",
+ "description": "Local helper for PlanLimits: detects Claude Code / Codex CLI usage from local logs, routes your next task, local MCP server and Claude Code hook. Nothing but plan ids and states leaves your machine.",
+ "type": "module",
+ "bin": { "planlimits": "bin/planlimits.mjs" },
+ "files": ["bin", "src", "vendor", "README.md"],
+ "engines": { "node": ">=18" },
+ "license": "MIT",
+ "homepage": "https://planlimits.app/cli/"
+}
